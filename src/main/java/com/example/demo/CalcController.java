@@ -7,18 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalcController {
 	@RequestMapping (method = RequestMethod.GET, value = "/multiply")
-	public static int multiply(int x, int y) {
-        int result = x * y;
-        return result;
+	public int multiply(int x, int y) {
+        return x * y;
     }
 	@RequestMapping (method = RequestMethod.GET, value = "/add")
-	public static int add(int x, int y) {
-        int result = x + y;
-        return result;
+	public int add(int x, int y) {
+        return x + y;
     }
 	@RequestMapping (method = RequestMethod.GET, value = "/divide")
-	public static int divide(int x, int y) {
-        int result = x / y;
-        return result;
+	public int divide(int x, int y) {
+        return x / y;
     }
 }
